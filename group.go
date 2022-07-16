@@ -17,7 +17,7 @@ type Group struct {
 	Stream     *Stream              `json:"stream,omitempty"`
 	Locations  map[string][]float64 `json:"locations,omitempty"`
 	State      *State               `json:"action,omitempty"`
-	ID         int                  `json:"-"`
+	ID         int                  `json:"groupId,omitempty"`
 	bridge     *Bridge
 }
 
